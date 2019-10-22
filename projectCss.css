@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -18,7 +18,7 @@
 .menu ul li{
     list-style: none;
     margin: 0 20px;
-    color: white;
+    color: #b2b1b1;
     cursor: pointer;
 }
 
@@ -28,14 +28,24 @@
     margin-right: 35px;
 }
 
-.login-reg {
+.active{
+    color: #19dafa !important;
+}
+
+.login-reg{
     top: 35px;
     right: 60px;
     position: absolute;
     text-decoration: none;
     color: white;
     border: 2px solid rgb(13, 9, 70);
-    padding: 5px;
+    padding: 7px;
+}
+
+
+.login-reg a:hover{
+    background-color: white;
+    color: black;
 }
 
 .sol-type{
@@ -133,4 +143,24 @@
     margin: 0 20px;
     color: white;
     cursor: pointer;
+}
+
+.social-icons{
+    right: 25px;
+    bottom: 5px;
+    position: fixed;
+}
+
+.social-icons ul li{
+    list-style: none;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.social-icons ul li a{
+    color: white;
+    border-radius: 100%;
+    border: 1px solid #999;
+    padding: 5px;
+    display: block;
 }

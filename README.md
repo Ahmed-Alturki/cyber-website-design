@@ -1,2 +1,2 @@
 # cs342-project
-managing my course project
+  now im in midpoint
