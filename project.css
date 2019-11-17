@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.navbar-container {
+  background-color: #333;
+  padding: 10px 0px;
+  height: 70px;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+}
+
+.logo{
+  width: 70px;
+  float: left;
+  padding-top: 5px;
+}
+
+.button{
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover {
+  background: red;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 5px;
+}
+
+.navbar ul li {
+  display: block;
+  position: relative;
+}
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.navbar ul li a{
+  padding: 1em;
+}
+
+.navbar ul li a:hover { background: #2c3e50; }
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+.navbar li:hover a { background: #333; }
+
+.navbar li:hover li a:hover { background: #2c3e50; }
+
+.navbar li ul li { border-top: 0; }
+
+.navbar li {
+  float: right;
+}
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+.body-container {
+  width: 80%;
+  margin: auto;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Footer */
+.footer-container {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+.footer-content {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-content h4{
+  text-align: left;
+  padding-left: 18px;
+}
+
+.footer-info li{
+  text-align: left;
+  font-size: 12px;
+}
+.footer-info li a{
+  color: #333;
+  padding: 10px 14px;
+}
+
+.footer-info a:hover{
+  color: red;
+}
+
+.right {
+  float: right;
+  padding-top: 120px;
+  height: 170px;
+}
+
+.end-info li {
+  text-align: right;
+  font-size: 11px;
+  padding: 10px 14px;
+  display: inline-block;
+ 
+}
+
+.end-info li a{
+  color: #333;
+}
+
+.end-info li a:hover{
+  color: red;
+}
+
+.my-form{
+  padding: 15px 0px;
+}
+.my-form .form-group {
+  padding-bottom: 0px;
+}
+
+.my-form label{
+  display: block;
+}
+
+.my-form input[type="text"]{
+  padding: 8px;
+  width: 100%;
+}
+
+.my-form .button{
+  margin-top: 10px;
+}
+
+
+.underlined {
+  border-bottom: 1px solid #2c3e50;
+}
+
+.topics li {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px 0px;
+    color: black;
+}
+
+.topics li a{
+  color: black;
+}
+.topics li a:hover{
+  font-style: bold;
+  color: red;
+}
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 5px;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.navbar .main-menu>li{
+  display: inline-block;  
+}
+
+.navbar a{
+  margin: 0;
+  padding: 12px 15px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+.navbar li:hover>a {
+  background: red;
+}
+
+.navbar .sub-menu li{
+  position: relative;
+}
+
+
+/*li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+.navbar-container a:hover, .dropdown:hover {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.sub-menu, .super-sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sub-menu li {
+  float: none;
+  position: relative;
+}
+
+.navbar-container .super-sub-menu {
+  top: 0;
+  right: 0;
+}
+.navbar-container .main-menu li:hover .sub-menu, .navbar-container .sub-menu li:hover .super-sub-menu{
+  display: block;
+}
+
+.sub-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.sub-menu a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*/
